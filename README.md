@@ -18,7 +18,7 @@ MIME type: `application/vnd.argo+json`
             }
         },
         "avatars": {
-            "uri": "https://api.example.com/avatars?userId=64"
+            "uri": "https://api.example.com/avatars?userId=64",
             "offset": 0,
             "length": 2,
             "total": 5,
