@@ -52,7 +52,7 @@ It is optional for the [Response Entity](#response-entity) (i.e. the
 top-level entity in the response, here the "user"), if it can often be
 inferred by the URI the client queried to retrieve the resource.
 
-It is mandatory for [Embedded Entities](#embedded-entities)
+It is mandatory for [Embedded Entities](#embedded-entity)
 (i.e. entities nested within the Response Entity, here the "address"
 and "avatars").
 
@@ -63,7 +63,7 @@ The content of the resource.
 The value of the `data` property can be of any type supported by JSON
 (object, array, string, number, boolean, null).  If an object or an
 array, it may recursively contain any type, as well as
-[Embedded Entities](#embedded-entities).
+[Embedded Entities](#embedded-entity).
 
 If `data` is an array, the resource may be a Collection Resource, and
 the Entity may represent a subset of that collection. In that case,
@@ -73,7 +73,7 @@ received subset.
 It is mandary for the [Response Entity](#response-entity) (i.e. the
 top-level entity in the response, here the "user").
 
-It is optional for [Embedded Entities](#embedded-entities).  Omitting
+It is optional for [Embedded Entities](#embedded-entity).  Omitting
 the data allows for lighter responses, or referencing a resource that
 doesn't currently exist, similarly to a [Link](#link) but as part of an
 existing Entity.
