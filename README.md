@@ -1,5 +1,7 @@
 `argo` is a JSON media-type for Hypermedia APIs.
 
+MIME type: `application/vnd.argo+json`
+
 # Example
 
 ``` json
