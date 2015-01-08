@@ -148,3 +148,8 @@ Similar media-type specifications:
 - [Siren](https://github.com/kevinswiber/siren)
 - [JSON API](http://jsonapi.org/)
 - [JSON-LD](http://json-ld.org/)
+
+Other related efforts:
+
+- [Hydra](http://www.markus-lanthaler.com/hydra/)
+- [ALPS](http://alps.io/spec/)
