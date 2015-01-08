@@ -48,11 +48,11 @@ MIME type: `application/vnd.argo+json`
 
 The URI of the resource.
 
-It is optional for the [Response Entity](#Response Entity) (i.e. the
+It is optional for the [Response Entity](#response-entity) (i.e. the
 top-level entity in the response, here the "user"), if it can often be
 inferred by the URI the client queried to retrieve the resource.
 
-It is mandatory for [Embedded Entities](#Embedded Entities)
+It is mandatory for [Embedded Entities](#embedded-entities)
 (i.e. entities nested within the Response Entity, here the "address"
 and "avatars").
 
@@ -63,19 +63,19 @@ The content of the resource.
 The value of the `data` property can be of any type supported by JSON
 (object, array, string, number, boolean, null).  If an object or an
 array, it may recursively contain any type, as well as
-[Embedded Entities](#Embedded Entities).
+[Embedded Entities](#embedded-entities).
 
 If `data` is an array, the resource may be a Collection Resource, and
 the Entity may represent a subset of that collection. In that case,
 the `offset`, `length` and `total` properties are used to identify the
 received subset.
 
-It is mandary for the [Response Entity](#Response Entity) (i.e. the
+It is mandary for the [Response Entity](#response-entity) (i.e. the
 top-level entity in the response, here the "user").
 
-It is optional for [Embedded Entities](#Embedded Entities).  Omitting
+It is optional for [Embedded Entities](#embedded-entities).  Omitting
 the data allows for lighter responses, or referencing a resource that
-doesn't currently exist, similarly to a [Link](#Link) but as part of an
+doesn't currently exist, similarly to a [Link](#link) but as part of an
 existing Entity.
 
 In the example above, the `data` for the "address" is omitted, whereas
@@ -83,20 +83,21 @@ the `data` for the "avatars" is present.
 
 ## `links`
 
-Optional list of [Links](#Link) from the resource.
+Optional list of [Links](#link) from the resource.
 
 
 ## `offset`
 
-The start offset of the range of the Response Entity array, within the
-full Collection Resource.
+The start offset of the range of the
+[Response Entity](#response-entity) array, within the full Collection
+Resource.
 
 Only for a Collection Resource if `data` is an array.
 
 ## `length`
 
-The length of the range of the Response Entity array, within the full
-Collection Resource.
+The length of the range of the [Response Entity](#response-entity)
+array, within the full Collection Resource.
 
 This is equivalent to the length of the `data` array.
 
@@ -122,7 +123,7 @@ Any Entity found within the Response Entity.
 Embedded Entities allow denormalising other resources into a parent
 one, typically to reduce the number of requests.  The structure of the
 enclosing resource often also describes the relationship between the
-Response and the Embedded Entities, similarly to the `rel` of [Links](#Link).
+Response and the Embedded Entities, similarly to the `rel` of [Links](#link).
 
 ## Link
 
