@@ -133,7 +133,14 @@ the current resource).  The target of a Link is its `href` property
 (or *hypertext reference*), which must be the URL of another resource.
 
 
+# Clients
+
+- [Theseus](https://github.com/argo-rest/theseus): JavaScript client for `argo` APIs
+
+
 # See also
+
+Similar media-type specifications:
 
 - [HAL](http://stateless.co/hal_specification.html)
 - [Collection+JSON](http://amundsen.com/media-types/collection/)
