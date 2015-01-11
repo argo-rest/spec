@@ -3,7 +3,9 @@
   * Resource
   * Collection Resource
   etc
+- Error responses
 - Describe usage with methods
+- Collapse/expand omitted data
 - Write thorough comparison with alternatives
 - Formal spec
 - Submit MIME type to IANA
